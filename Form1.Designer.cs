@@ -34,8 +34,8 @@
             novoToolStripMenuItem = new ToolStripMenuItem();
             abrirToolStripMenuItem = new ToolStripMenuItem();
             salvarToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator1 = new ToolStripSeparator();
             imprimirToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
             sairToolStripMenuItem = new ToolStripMenuItem();
             editarToolStripMenuItem = new ToolStripMenuItem();
             copiarToolStripMenuItem = new ToolStripMenuItem();
@@ -52,14 +52,30 @@
             direitaToolStripMenuItem = new ToolStripMenuItem();
             justificarToolStripMenuItem = new ToolStripMenuItem();
             toolStrip1 = new ToolStrip();
+            btn_novo = new ToolStripButton();
+            btn_abrir = new ToolStripButton();
+            btn_salvar = new ToolStripButton();
+            btn_copiar = new ToolStripButton();
+            toolStripSeparator2 = new ToolStripSeparator();
+            btn_colar = new ToolStripButton();
+            toolStripSeparator3 = new ToolStripSeparator();
+            btn_Negrito = new ToolStripButton();
+            btn_italico = new ToolStripButton();
+            btn_sublinhado = new ToolStripButton();
+            btn_fonte = new ToolStripButton();
+            toolStripSeparator4 = new ToolStripSeparator();
+            btn_esquerda = new ToolStripButton();
+            btn_centro = new ToolStripButton();
+            btn_direita = new ToolStripButton();
             menuStrip1.SuspendLayout();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(105, 240);
+            richTextBox1.Location = new Point(0, 58);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(125, 120);
+            richTextBox1.Size = new Size(912, 391);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
             // 
@@ -98,16 +114,16 @@
             salvarToolStripMenuItem.Size = new Size(149, 26);
             salvarToolStripMenuItem.Text = "Salvar";
             // 
-            // toolStripSeparator1
-            // 
-            toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(146, 6);
-            // 
             // imprimirToolStripMenuItem
             // 
             imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
             imprimirToolStripMenuItem.Size = new Size(149, 26);
             imprimirToolStripMenuItem.Text = "Imprimir";
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(146, 6);
             // 
             // sairToolStripMenuItem
             // 
@@ -205,11 +221,135 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { btn_novo, btn_abrir, btn_salvar, toolStripSeparator2, btn_copiar, btn_colar, toolStripSeparator3, btn_Negrito, btn_italico, btn_sublinhado, btn_fonte, toolStripSeparator4, btn_esquerda, btn_centro, btn_direita });
             toolStrip1.Location = new Point(0, 28);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(912, 25);
+            toolStrip1.Size = new Size(912, 27);
             toolStrip1.TabIndex = 2;
             toolStrip1.Text = "toolStrip1";
+            // 
+            // btn_novo
+            // 
+            btn_novo.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_novo.Image = Properties.Resources.novo;
+            btn_novo.ImageTransparentColor = Color.Magenta;
+            btn_novo.Name = "btn_novo";
+            btn_novo.Size = new Size(29, 24);
+            btn_novo.Text = "Novo";
+            // 
+            // btn_abrir
+            // 
+            btn_abrir.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_abrir.Image = Properties.Resources.abrir;
+            btn_abrir.ImageTransparentColor = Color.Magenta;
+            btn_abrir.Name = "btn_abrir";
+            btn_abrir.Size = new Size(29, 24);
+            btn_abrir.Text = "Abrir";
+            // 
+            // btn_salvar
+            // 
+            btn_salvar.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_salvar.Image = Properties.Resources.salvar;
+            btn_salvar.ImageTransparentColor = Color.Magenta;
+            btn_salvar.Name = "btn_salvar";
+            btn_salvar.Size = new Size(29, 24);
+            btn_salvar.Text = "Salvar";
+            // 
+            // btn_copiar
+            // 
+            btn_copiar.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_copiar.Image = Properties.Resources.copiar;
+            btn_copiar.ImageTransparentColor = Color.Magenta;
+            btn_copiar.Name = "btn_copiar";
+            btn_copiar.Size = new Size(29, 24);
+            btn_copiar.Text = "Copiar";
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(6, 27);
+            // 
+            // btn_colar
+            // 
+            btn_colar.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_colar.Image = Properties.Resources.colar;
+            btn_colar.ImageTransparentColor = Color.Magenta;
+            btn_colar.Name = "btn_colar";
+            btn_colar.Size = new Size(29, 24);
+            btn_colar.Text = "Colar";
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(6, 27);
+            // 
+            // btn_Negrito
+            // 
+            btn_Negrito.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_Negrito.Image = Properties.Resources.negrito;
+            btn_Negrito.ImageTransparentColor = Color.Magenta;
+            btn_Negrito.Name = "btn_Negrito";
+            btn_Negrito.Size = new Size(29, 24);
+            btn_Negrito.Text = "Negrito";
+            // 
+            // btn_italico
+            // 
+            btn_italico.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_italico.Image = Properties.Resources.italico;
+            btn_italico.ImageTransparentColor = Color.Magenta;
+            btn_italico.Name = "btn_italico";
+            btn_italico.Size = new Size(29, 24);
+            btn_italico.Text = "Itálico";
+            // 
+            // btn_sublinhado
+            // 
+            btn_sublinhado.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_sublinhado.Image = Properties.Resources.sublinhado;
+            btn_sublinhado.ImageTransparentColor = Color.Magenta;
+            btn_sublinhado.Name = "btn_sublinhado";
+            btn_sublinhado.Size = new Size(29, 24);
+            btn_sublinhado.Text = "Sublinhado";
+            // 
+            // btn_fonte
+            // 
+            btn_fonte.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_fonte.Image = Properties.Resources.fonte;
+            btn_fonte.ImageTransparentColor = Color.Magenta;
+            btn_fonte.Name = "btn_fonte";
+            btn_fonte.Size = new Size(29, 24);
+            btn_fonte.Text = "Fonte";
+            // 
+            // toolStripSeparator4
+            // 
+            toolStripSeparator4.Name = "toolStripSeparator4";
+            toolStripSeparator4.Size = new Size(6, 27);
+            // 
+            // btn_esquerda
+            // 
+            btn_esquerda.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_esquerda.Image = Properties.Resources.esquerda;
+            btn_esquerda.ImageTransparentColor = Color.Magenta;
+            btn_esquerda.Name = "btn_esquerda";
+            btn_esquerda.Size = new Size(29, 24);
+            btn_esquerda.Text = "Esquerda";
+            // 
+            // btn_centro
+            // 
+            btn_centro.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_centro.Image = Properties.Resources.centro;
+            btn_centro.ImageTransparentColor = Color.Magenta;
+            btn_centro.Name = "btn_centro";
+            btn_centro.Size = new Size(29, 24);
+            btn_centro.Text = "Centro";
+            // 
+            // btn_direita
+            // 
+            btn_direita.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            btn_direita.Image = Properties.Resources.direita;
+            btn_direita.ImageTransparentColor = Color.Magenta;
+            btn_direita.Name = "btn_direita";
+            btn_direita.Size = new Size(29, 24);
+            btn_direita.Text = "Direita";
             // 
             // Form1
             // 
@@ -220,10 +360,14 @@
             Controls.Add(richTextBox1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            MaximizeBox = false;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Editor de Texto - CFB Cursos - Curso de C#";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -254,5 +398,20 @@
         private ToolStripMenuItem esquerdaToolStripMenuItem;
         private ToolStripMenuItem direitaToolStripMenuItem;
         private ToolStripMenuItem justificarToolStripMenuItem;
+        private ToolStripButton btn_novo;
+        private ToolStripButton btn_abrir;
+        private ToolStripButton btn_salvar;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripButton btn_copiar;
+        private ToolStripButton btn_colar;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripButton btn_Negrito;
+        private ToolStripButton btn_italico;
+        private ToolStripButton btn_sublinhado;
+        private ToolStripButton btn_fonte;
+        private ToolStripSeparator toolStripSeparator4;
+        private ToolStripButton btn_esquerda;
+        private ToolStripButton btn_centro;
+        private ToolStripButton btn_direita;
     }
 }
